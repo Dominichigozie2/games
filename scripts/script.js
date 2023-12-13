@@ -35,3 +35,38 @@ searchClicked.addEventListener('click', () =>{
 
 
 
+
+const btnlog = document.querySelector(".log");
+const btnsign = document.querySelector(".sign");
+const bodysign = document.querySelector(".signup");
+const bodylog = document.querySelector(".signin");
+
+btnlog.addEventListener('click', ()=>{
+    bodysign.style.top="-100%";
+    bodylog.style.bottom="0";
+    btnlog.classList.add('active');
+    btnsign.classList.remove('active');
+
+    btnsign.addEventListener('click', ()=>{
+        bodysign.style.top="0";
+        bodylog.style.bottom="-100%";
+        btnlog.classList.remove('active');
+        btnsign.classList.add('active');
+    });
+
+});
+
+
+const logSign = document.querySelectorAll(".buttons a");
+const logSignbody = document.querySelector(".login-signup");
+logSign.forEach(but =>{
+
+    but.addEventListener('click', ()=>{
+        logSignbody.style.display="flex";
+    });
+
+    const close = document.querySelector("#fa-times");
+    close.addEventListener('click', ()=>{
+        logSignbody.style.display="none";
+    });
+});

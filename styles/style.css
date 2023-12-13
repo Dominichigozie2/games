@@ -798,8 +798,144 @@ body{
     display: flex;
 }
 /* search section */
+.login-signup{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000913e3;
+    z-index: 200;
+    display: none;align-items: center;
+    justify-content: center;
+
+    & .login-signup-container{
+        position: relative;
+        display: flex;
+        border-radius: 15px;
+        overflow: hidden;
+        flex-direction: column;
+
+        & .button-sign-log{
+            display: flex;
+            justify-content: space-between;
+
+            & .active,
+            & h3:hover{
+                background: var(--bg-secondary);
+                color: var(--col-200);
+            }
+            & h3{
+                padding: 1rem;
+                flex: 1;
+                cursor: pointer;
+                color: var(--col-w-100);
+                text-align: center;
+                text-transform: capitalize;
+                border-bottom: 2px solid var(--bg-secondary);
+                background: var(--col-200);
+                transition: all 300ms ease-in-out;
+            }
+        }
+
+        & .form-groups{
+            min-width: 600px;
+            min-height: 500px;
+            background: #051d3669;
+            backdrop-filter: blur(5px);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 3rem 2rem;
+            position: relative;
+
+            & .signin{
+                bottom: -100%;
+                left: 0;
+            }
+            & .signup{
+                bottom: -100%;
+                left: 0;top: 0;
+            }
+            & form{
+               width: 100%;
+               display: flex;
+               padding: 5rem 2rem 2rem;
+               flex-direction: column;
+               gap: 2rem;
+               height: 100%;
+               transition: all 900ms ease-in-out;
+               position: absolute;
+
+               h1{
+                font-weight: 800;
+                color: var(--bg-secondary);
+                text-align: center;
+                padding-bottom: 1rem;
+
+               }
+
+               & .input-group{
+                background: var(--col-w-100);
+                padding: .5rem 1rem;
+                border-radius: 15px;
+                border: 2px solid var(--bg-secondary);
+
+                & input{
+                    width: 100%;
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                    color: var(--col-200);
+                    background: transparent;
+                }
+            }
+            & button{
+                padding: 1rem;
+                background: var(--bg-secondary);
+                font-size: 19px;
+                font-weight: 900;
+                color: var(--col-200);
+                border: none;
+                outline: none;
+                border-radius: 15px;
+                cursor: pointer;
+                transition: all 300ms ease;
+            }
+            & button:hover{
+               background: var(--col-200); 
+               color: var(--bg-secondary);
+            }
+            & p{
+                color: var(--col-w-100);
+                width: 100%;
+
+                & a{
+                    color: var(--col-pink);
+                }
+            }
+            }
+
+        }
 
 
+
+
+        .fa-times{
+            color: var(--col-w-100);
+            font-size: 2rem;
+            top: 7rem;left: 2rem;
+            z-index: 3;
+            cursor: pointer;
+            position: absolute;
+        }
+
+    }
+
+}
+/* the login and sign up page */
+
+/* the login and sign up page */
 
 /* the keyframes here */
 @keyframes changewidth{
