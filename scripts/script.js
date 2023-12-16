@@ -42,7 +42,7 @@ const bodysign = document.querySelector(".signup");
 const bodylog = document.querySelector(".signin");
 
 btnlog.addEventListener('click', ()=>{
-    bodysign.style.top="-100%";
+    bodysign.style.top="-100rem";
     bodylog.style.bottom="0";
     btnlog.classList.add('active');
     btnsign.classList.remove('active');

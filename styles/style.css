@@ -64,6 +64,11 @@ body {
             display: flex;
             gap: 2rem;
 
+            & .iconlog{
+                display: none;
+                color: var(--bg-secondary);
+            }
+
             & a {
                 padding: .5rem 2rem;
                 display: flex;
@@ -447,7 +452,7 @@ body {
                                 justify-content: space-around;
 
                                 & button {
-                                    width: 80px;
+                                    width: 70px;
                                     height: 50px;
                                     background: #0d345f;
                                     border: none;
@@ -548,7 +553,6 @@ body {
                     }
 
                     & .my-bet {
-                        background: red;
                         width: 100%;
 
                         & .bet-list {
@@ -817,10 +821,11 @@ body {
     background: #000913ea;
     top: 0;
     left: 0;
-    gap: 1rem;
+    gap: 5rem;
     height: 100%;
     width: 100%;
     display: none;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -830,6 +835,7 @@ body {
         border: 3px solid var(--bg-secondary);
         border-radius: 15px;
         overflow: hidden;
+        height: max-content;
 
         & .input-search {
             width: 100%;
@@ -918,7 +924,7 @@ body {
         }
 
         & .form-groups {
-            min-width: 600px;
+            width: 600px;
             min-height: 500px;
             background: #051d3669;
             backdrop-filter: blur(5px);
@@ -945,7 +951,7 @@ body {
                 display: flex;
                 padding: 5rem 2rem 2rem;
                 flex-direction: column;
-                gap: 2rem;
+                gap: 1rem;
                 height: 100%;
                 transition: all 900ms ease-in-out;
                 position: absolute;
@@ -975,7 +981,7 @@ body {
                 }
 
                 & button {
-                    padding: 1rem;
+                    padding: .5rem 1rem;
                     background: var(--bg-secondary);
                     font-size: 19px;
                     font-weight: 900;
@@ -1133,6 +1139,40 @@ body {
 
                 & .col-2 {
                     grid-column: span 3;
+                    & .av-games{
+                        & .game-container{
+                            & .game-bady{
+                                & .game-details{
+                                    & .predict-section{
+                                        & button {
+                                            max-width: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .search{
+            & form{
+                width: 80%;
+                flex-direction: column;
+            }
+        }
+        .login-signup{
+            & .login-signup-container{
+                
+                & .form-groups{
+                    min-width: 400px;
+                    width: 100%;
+                    padding:0;
+                    & form{
+                        padding:3.5rem 1rem 1rem;
+                    }
                 }
             }
         }
@@ -1143,7 +1183,47 @@ body {
     .firstnav{
         & .firstcontainer{
             & .buttons{
-                display: none;
+                
+                & .iconlog{
+                    display: flex;
+                    color: var(--bg-secondary);
+                }
+            & a {
+                padding: .5rem 0;
+            }
+                & .logbtnnone{
+                    display: none;
+                }
+            }
+        }
+    }
+    .login-signup{
+        & .login-signup-container{
+            width: 100%;
+            & .form-groups{
+                min-width: 200px;
+                width: 100%;
+                padding:0;
+                & form{
+                    padding:3.5rem 1rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media(width < 350px) {
+
+    .login-signup{
+        & .login-signup-container{
+            width: 100%;
+            & .form-groups{
+                min-width: 200px;
+                width: 100%;
+                padding:0;
+                & form{
+                    padding:3.5rem 1rem 1rem;
+                }
             }
         }
     }
