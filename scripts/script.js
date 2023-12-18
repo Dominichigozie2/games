@@ -70,3 +70,13 @@ logSign.forEach(but =>{
         logSignbody.style.display="none";
     });
 });
+
+
+
+const predBtn = document.querySelectorAll(".buttons")
+
+predBtn.forEach(btn =>{
+     btn.addEventListener("click", ()=>{
+        btn.classList.toggle("bg-change");
+     })
+});
