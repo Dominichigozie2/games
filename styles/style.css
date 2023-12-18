@@ -841,7 +841,7 @@ body {
     right: 3rem;
     width: 40px;
     text-align: center;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -1216,6 +1216,14 @@ body {
                 }
             }
         }
+        .number-display{
+           display: flex;
+        }
+        .number-display{
+            right: 2rem;
+            bottom: 2rem;
+            z-index: 10;
+        }
 }
 
 @media(width < 450px) {
@@ -1252,6 +1260,7 @@ body {
     }
     .number-display{
         right: 2rem;
+        bottom: 2rem;
         z-index: 10;
     }
 }
