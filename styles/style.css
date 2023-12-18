@@ -830,9 +830,31 @@ body {
 
 /*======= the grid starts ========*/
 
+
+
+
+/* the number div*/
+
+.number-display{
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ffffff93;
+    height: 40px;
+    font-weight: 900;
+    background: var(--col-w-100);
+}
+/* the number div*/
+
+
+
 /* search section*/
-
-
 .search {
     position: fixed;
     z-index: 1000;
@@ -897,8 +919,9 @@ body {
     /* animation: scale 500ms ease-in-out forwards; */
     display: flex;
 }
-
 /* search section */
+
+/* the login and sign up page */
 .login-signup {
     position: fixed;
     top: 0;
@@ -1047,8 +1070,6 @@ body {
 
 /* the login and sign up page */
 
-/* the login and sign up page */
-
 /* the keyframes here */
 @keyframes changewidth {
     to {
@@ -1127,7 +1148,8 @@ body {
    /* displayed the search word none */
     .main-nav {
         & .nav-container {
-            position: relative;
+            /* position: absolute; */
+            bottom: 0;
             justify-content: flex-end;
 
             & .list-group {
@@ -1227,6 +1249,10 @@ body {
                 }
             }
         }
+    }
+    .number-display{
+        right: 2rem;
+        z-index: 10;
     }
 }
 

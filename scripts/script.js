@@ -73,10 +73,19 @@ logSign.forEach(but =>{
 
 
 
+
+const activeCountEl = document.querySelector('.number-display');
+activeCountEl.id = 'active-count';
+activeCountEl.textContent = '0'; // Initial value
+document.body.appendChild(activeCountEl);
 const predBtn = document.querySelectorAll(".buttons")
 
 predBtn.forEach(btn =>{
      btn.addEventListener("click", ()=>{
         btn.classList.toggle("bg-change");
-     })
+
+          // Update active button count
+    const activeBtns = document.querySelectorAll('.buttons.bg-change');
+    activeCountEl.textContent = `${activeBtns.length}`;
+     });
 });
