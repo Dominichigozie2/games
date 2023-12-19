@@ -1321,7 +1321,7 @@ body {
     }
     .number-display{
         right: 2rem;
-        bottom: 2rem;
+        bottom: 6rem;
         z-index: 10;
     }
     .bottom-menu{
