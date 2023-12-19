@@ -60,7 +60,7 @@ body {
             font-style: italic;
         }
 
-        & .buttons {
+        & .button{
             display: flex;
             gap: 2rem;
 
@@ -853,6 +853,57 @@ body {
 /* the number div*/
 
 
+/* the bottom menu for mobile screen */
+.bottom-menu{
+    bottom: 0;left: 0;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background: var(--col-200);
+
+    & .bottom-menu-list-group{
+        padding-top: .5rem;
+        display: flex;
+        width: 90%;
+        margin-inline: auto;
+        align-items: center;
+        justify-content: space-between;
+
+        & .bottom-list-items{
+            list-style: none;
+            position: relative;
+
+            & a{
+                padding: .5rem 1rem;
+                color: var(--col-w-100);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+            z-index: 1000;
+            border-bottom: 5px solid var(--col-200);
+            transition: all 300ms ease;
+            }
+        }
+        & .active,
+        .bottom-list-items:hover{
+            & a{
+                border-bottom: 5px solid var(--bg-secondary);
+                & i{
+                    color: var(--bg-secondary);
+                }
+                & span{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+/* the bottom menu for mobile screen */
+
+
 
 /* search section*/
 .search {
@@ -1124,6 +1175,13 @@ body {
                     }
                 }
             }
+             & .col-1{
+                & .categories{
+                     & h2 {
+                        font-size: 24px;
+                     }
+                }
+             }
         }
     }
 }
@@ -1221,8 +1279,11 @@ body {
         }
         .number-display{
             right: 2rem;
-            bottom: 2rem;
+            bottom: 6rem;
             z-index: 10;
+        }
+        .bottom-menu{
+            display: flex
         }
 }
 
@@ -1230,7 +1291,7 @@ body {
     /* displayed the first nav button word none */
     .firstnav{
         & .firstcontainer{
-            & .buttons{
+            & .button{
                 
                 & .iconlog{
                     display: flex;
@@ -1262,6 +1323,11 @@ body {
         right: 2rem;
         bottom: 2rem;
         z-index: 10;
+    }
+    .bottom-menu{
+        & .bottom-menu-list-group{
+            width: 100%;
+        }
     }
 }
 

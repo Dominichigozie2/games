@@ -57,7 +57,7 @@ btnlog.addEventListener('click', ()=>{
 });
 
 
-const logSign = document.querySelectorAll(".buttons a");
+const logSign = document.querySelectorAll(".button a");
 const logSignbody = document.querySelector(".login-signup");
 logSign.forEach(but =>{
 
