@@ -262,9 +262,6 @@ body {
                                     font-weight: 800;
                                 }
                             }
-                            & button:hover{
-                                background: var(--col-200);
-                            }
                             & .bg-change{
                                 background: var(--bg-secondary);
                                 color: var(--col-200);
