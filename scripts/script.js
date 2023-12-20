@@ -89,3 +89,15 @@ predBtn.forEach(btn =>{
     activeCountEl.textContent = `${activeBtns.length}`;
      });
 });
+
+
+const display = document.querySelector(".number-display");
+const displayBody = document.querySelector(".betplacer");
+const removeBody = displayBody.querySelector(".fa-times");
+
+display.addEventListener("click", ()=>{
+    displayBody.style.display="flex"; 
+    removeBody.addEventListener("click", ()=>{
+        displayBody.style.display="none"; 
+    }); 
+});
