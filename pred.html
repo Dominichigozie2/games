@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online Games</title>
+
+    <!-- the favicon image link -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- the favicon image link -->
+
+    <link rel="stylesheet" href="./styles/pred.css">
+
+    <!-- the fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- the swiperjs cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
+
+</head>
+
+<body>
+    <div class="firstnav">
+        <div class="container firstcontainer">
+            <div class="logo">Sports</div>
+            <div class="button">
+                <a href="#" class="logbtnnone">Login</a>
+                <a href="#" class="iconlog"><i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="#" class="iconlog"><i class="fa fa-user-plus"></i></a>
+                <a href="#" class="logbtnnone">register</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <ul class="list-group">
+                <li class="list-items active"><a href="./home.html">home</a></li>
+                <li class="list-items"><a href="#">about</a></li>
+                <li class="list-items"><a href="#">games</a></li>
+                <li class="list-items"><a href="#">history</a></li>
+                <li class="list-items"><a href="#">promo</a></li>
+            </ul>
+
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+                <b class="searchword">search</b>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="grid-system">
+        <div class="container grid-container">
+            <div class="col col-1">
+                <div class="details">
+                    <h2>Details</h2>
+                    <ul>
+                        <li><a href="#">Today's Game</a></li>
+                        <li><a href="#">predictioons</a></li>
+                        <li><a href="#">stats</a></li>
+                    </ul>
+                </div>
+
+                <div class="categories">
+                    <h2>top games</h2>
+                    <ul class="cat-container">
+                        <li><a href="#">football</a></li>
+                        <li><a href="#">football</a></li>
+                        <li><a href="#">football</a></li>
+                        <li><a href="#">football</a></li>
+                        <li><a href="#">football</a></li>
+                        <li><a href="#">football</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col col-2">
+                <div class="team-display">
+                    <div class="team-box">
+                        <div class="image-box">
+                            <img src="./images/chelsea.png" alt="">
+                            <h1>chelsea</h1>
+                        </div>
+                        <div class="game-date">
+                            <h1>19:00</h1>
+                            <h3>1/23</h>
+                        </div>
+                        <div class="image-box">
+                            <img src="./images/manu.png" alt="">
+                            <h1>Man united</h1>
+                        </div>
+                    </div>
+                    <div class="predictions">
+                        <div class="pred-box-flex">
+                            <h1 class="pred-option">1x2</h1>
+                            <div class="pred-option-box">
+                                <button class="buttons">home <span>1.45</span></button>
+                                <button class="buttons">draw <span>1.90</span></button>
+                                <button class="buttons">away <span>1.45</span></button>
+                            </div>
+                        </div>
+                        <div class="pred-box-flex">
+                            <h1 class="pred-option">1x2</h1>
+                            <div class="pred-option-box">
+                                <button class="buttons">home <span>1.45</span></button>
+                                <button class="buttons">draw <span>1.90</span></button>
+                                <button class="buttons">away <span>1.45</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-3">
+                <div class="game-history">
+                    <div class="game-button-container">
+                        <a class="pred-btn active" id="pred-btn">betslips</a>
+                        <a class="pred-btn" id="hist-btn">My bet</a>
+                    </div>
+                    <div class="game-history-container">
+                        <div class="my-bet bet-col">
+                            <a href="#" class="bet-list">
+                                <div class="left">
+                                    <h2 class="bet-option">home</h2>
+                                    <span>1x2</span>
+                                    <div class="bet-team">
+                                        <h3>chel</h3>
+                                        <span>vs</span>
+                                        <h3>manu</h3>
+                                    </div>
+                                </div>
+                                <div class="right odd">1.30</div>
+                            </a>
+                            <a href="#" class="bet-list">
+                                <div class="left">
+                                    <h2 class="bet-option">home</h2>
+                                    <span>1x2</span>
+                                    <div class="bet-team">
+                                        <h3>chel</h3>
+                                        <span>vs</span>
+                                        <h3>manu</h3>
+                                    </div>
+                                </div>
+                                <div class="right odd">1.30</div>
+                            </a>
+                            <a href="#" class="bet-list">
+                                <div class="left">
+                                    <h2 class="bet-option">home</h2>
+                                    <span>1x2</span>
+                                    <div class="bet-team">
+                                        <h3>chel</h3>
+                                        <span>vs</span>
+                                        <h3>manu</h3>
+                                    </div>
+                                </div>
+                                <div class="right odd">1.30</div>
+                            </a>
+
+                            <div class="cal-odd">
+                                <div class="the-game-amount">
+                                    <h1>treble</h1>
+                                    <form action="#">
+                                        <label for="#">NGN</label>
+                                        <div class="input-amount">
+                                            <input type="text" placeholder="min.100">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="odd">
+                                    <h5>odds</h5>
+                                    <h5 class="Themainodd">3.90</h5>
+                                </div>
+                                <button class="place-button">place bet</button>
+                            </div>
+                        </div>
+                        <div class="my-history bet-col">
+                            <ul class="mynav">
+                                <li>unsettled</li>
+                                <li><a href="#">settled</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-container">
+                    <h1>top winners</h1>
+                    <ul class="winners-list">
+                        <li class="winners-items"><span>Dike : </span> N120,000</li>
+                        <li class="winners-items"><span>Dike : </span> N120,000</li>
+                        <li class="winners-items"><span>Dike : </span> N120,000</li>
+                        <li class="winners-items"><span>Dike : </span> N120,000</li>
+                        <li class="winners-items"><span>Dike : </span> N120,000</li>
+                    </ul>
+                    <a href="#">view more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <p class="number-display">
+        1
+    </p>
+
+
+    <div class="search">
+        <form action="#" class="search-contain">
+            <div class="input-search">
+                <input type="search" name="#" id="#">
+            </div>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <i class="fa fa-times"></i>
+    </div>
+
+
+    <!-- the bet placer section -->
+
+    <div class="betplacer">
+        <i class="fa fa-times"></i>
+        <div class="game-details-container">
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+            <div class="team-select-body">
+                <div class="left">
+                    <h3 class="option-chose">home</h3>
+                    <span class="option-chosen-from">1x2</span>
+                    <div class="team-seleted">
+                        <h1>Chel</h1>
+                        <span>vs</span>
+                        <h1>man u</h1>
+                    </div>
+                </div>
+                <h2 class="right">1.99</h2>
+            </div>
+        </div>
+        <div class="amount-form">
+            <h1 class="number-of-game-selected">treble</h1>
+            <form action="#">
+                <label for="input">NGN</label>
+                <input type="text" placeholder="min. 100">
+            </form>
+        </div>
+        <div class="odds-total">
+            <h5>odds</h5>
+            <h5>3.90</h5>
+        </div>
+        <button class="submit">place Bet</button>
+    </div>
+    
+    <!-- the bet placer section -->
+
+    <div class="login-signup">
+        <div class="login-signup-container">
+            <div class="fa fa-times" id="fa-times"></div>
+            <div class="button-sign-log">
+                <h3 class="active sign">Signin</h3>
+                <h3 class="log">login</h3>
+            </div>
+            <div class="form-groups">
+                <form action="#" class="signup">
+                    <h1>Signup</h1>
+                    <div class="input-group">
+                        <input name="#" placeholder="Phone" type="text">
+                    </div>
+                    <div class="input-group">
+                        <input name="#" placeholder="Password" type="text">
+                    </div>
+                    <button name="#">submit</button>
+                    <br>
+                    <p>By creating an account, you agree to our <a href="#">Terms & Conditions</a> and confirm that you
+                        are at least 18 years old</p>
+                </form>
+
+                <form action="#" class="signin">
+                    <h1>Login</h1>
+                    <div class="input-group">
+                        <input name="#" placeholder="Phone" type="text">
+                    </div>
+                    <div class="input-group">
+                        <input name="#" placeholder="password" type="text">
+                    </div>
+                    <button name="#">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- the bottom menu on mobile screen -->
+    <div class="bottom-menu">
+        <ul class="bottom-menu-list-group">
+            <li class="bottom-list-items active"><a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span>home</span>
+                </a></li>
+            <li class="bottom-list-items"><a href="#">
+                    <i class="fa-solid fa-list"></i>
+                    <span>menu</span>
+                </a></li>
+            <li class="bottom-list-items"><a href="#">
+                    <i class="fa-solid fa-scroll"></i>
+                    <span>mybets</span>
+                </a></li>
+            <li class="bottom-list-items"><a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>me</span>
+                </a></li>
+        </ul>
+    </div>
+    <!-- the bottom menu on mobile screen -->
+
+
+    <script src="./scripts/script.js"></script>
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- swiper js cdn -->
+    <script>
+        // swiper element
+        const swiperEl = document.querySelector('.featured-container');
+
+        // swiper parameters
+        const swiperParams = {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+
+                640: {
+                    slidesPerView: 2,
+                },
+                1010: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
+            },
+            on: {
+                init() {
+                    // ...
+                },
+            },
+        };
+
+        // now we need to assign all parameters to Swiper element
+        Object.assign(swiperEl, swiperParams);
+
+        // and now initialize it
+        swiperEl.initialize();
+    </script>
+</body>
+
+</html>
